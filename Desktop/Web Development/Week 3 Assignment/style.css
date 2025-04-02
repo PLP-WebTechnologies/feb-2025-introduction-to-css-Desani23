@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f5f1eb; /* Soft beige */
+    color: #333; /* Dark gray for readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #6D4C74; /* Muted plum */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Merriweather', serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Navigation Bar */
+nav a {
+    color: #f3e1f1; /* Light pinkish white */
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 1em;
+    display: inline-block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Hover effect for navigation links */
+nav a:hover {
+    color: #6D4C74; /* Plum */
+    background-color: #f3e1f1; /* Soft highlight */
+    border-radius: 5px;
+}
+
+/* Layout using CSS Grid */
+main.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Styling for the main article */
+.main-article {
+    background-color: #ffffff; /* White for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Article Heading */
+.main-article h2 {
+    color: #a25b5b; /* Deep rose */
+    font-family: 'Merriweather', serif;
+}
+
+/* Image container styling for side-by-side images */
+.image-container {
+    display: flex;
+    justify-content: center; /* Centers images */
+    gap: 40px; /* Adds spacing between images */
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: auto; /* Adjust width so they fit in one row */
+    max-width: 200px; /* Prevents them from getting too large */
+    height: auto; /* Keeps aspect ratio */
+    border-radius: 20px; /* Optional: Adds rounded corners */
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background-color: #9b8db5; /* Muted lavender */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Sidebar Headings */
+.sidebar h3 {
+    color: #6D4C74; /* Plum */
+    font-family: 'Merriweather', serif;
+}
+
+/* Sidebar Links */
+.sidebar a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+/* Hover Effect for Sidebar Links */
+.sidebar a:hover {
+    background-color: #a25b5b; /* Deep rose */
+    color: white; /* Ensures text remains white on hover */
+    border-radius: 5px;
+}
+
+/* Comments Section */
+.comments {
+    margin-top: 20px;
+}
+
+/* Comments Section Heading */
+.comments h3 {
+    color: #6D4C74; /* Plum */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #6D4C74; /* Plum */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Forms Styling */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    height: 200px;
+}
+
+/* Styling for Buttons */
+form button,
+form input[type="submit"] {
+    background-color: #a25b5b; /* Deep rose */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover Effect for Buttons */
+form button:hover,
+form input[type="submit"]:hover {
+    background-color: #6D4C74; /* Plum */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
